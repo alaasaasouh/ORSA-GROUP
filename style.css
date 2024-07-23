@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background: #fffc2e;
+  background:  hsl(51, 100%, 54%);
   overflow-x: hidden; /* Prevent horizontal scrolling */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
