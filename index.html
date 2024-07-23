@@ -9,7 +9,6 @@
   </head>
   <body>
     <header>
-      
       <nav class="navbar">
         <h2 class="logo"><a href="#">ORSA GROUP</a></h2>
         <input type="checkbox" id="menu-toggler">
@@ -25,17 +24,17 @@
           <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav>
-
-
-
     </header>
 
     <section class="homepage" id="home">
+      <video autoplay muted loop id="home-video">
+        <source src="videos/video11.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
       <div class="content">
         <div class="text">
           <h1>ORSA GROUP</h1>
-          <p>
-            Discover top-quality  PRODUCTS<br> make lasting memories.</p>
+          <p>Discover top-quality PRODUCTS<br> make lasting memories.</p>
         </div>
         <a href="#services">Our ITEMS</a>
       </div>
@@ -47,69 +46,60 @@
       <ul class="cards">
         <li class="card">
           <a href="oil.html">
-            <img src="images/tents.jpg">
-            <h3> Olive OIL</h3>
-            <p><Var>Extra virgin olive oil 
-              <br>زيت ريتون بكر ممتاز</Var></p>
+            <img src="images/tents.jpg" alt="Olive Oil">
+            <h3>Extra virgin olive oil</h3>
+            <p>زيت ريتون بكر ممتاز</p>
           </a>
         </li>
         <li class="card">
           <a href="oil2.html">
-            <img src="images/cover2.jpg" >
-            <h3>Pure OIL</h3>
-            <p>
-              Pure olive oil
-            <BR>زيت زيتون نقي</BR></p>
+            <img src="images/cover2.jpg" alt="Pure Oil">
+            <h3>Pure olive  OIL</h3>
+            <p>زيت زيتون نقي</p>
           </a>
         </li>
         <li class="card">
           <a href="oil3.html">
-            <img src="images/cover3.jpg" alt="Camp Stoves">
+            <img src="images/cover3.jpg" alt="Sesame Tahini">
             <h3>Sesame tahini</h3>
-            <p>Sesame tahini
-              <br>طحينة السمسم</p>
+            <p>طحينة السمسم</p>
           </a>
         </li>
         <li class="card">
           <a href="oil4.html">
-            <img src="images/cover4.jpg" alt="Backpacks">
+            <img src="images/cover4.jpg" alt="Olives">
             <h3>Olive</h3>
-            <p>Olive
-              <br>زيتون</p>
+            <p>زيتون</p>
           </a>
         </li>
         <li class="card">
           <a href="oil5.html">
-            <img src="images/cover5.jpg" alt="Camp Chairs">
+            <img src="images/cover5.jpg" alt="Pickled Cucumber">
             <h3>Pickled cucumber</h3>
-            <p>Pickled cucumber
-              <br>مخلل خيار</p>
+            <p>مخلل خيار</p>
           </a>
         </li>
         <li class="card">
           <a href="oil6.html">
-            <img src="images/cover6.jpg" alt="Camp Lights">
-            <h3>EGGPLAN</h3>
-            <p>NASTED EGGPLAN
-              <br>باذنجان مشوي</p>
+            <img src="images/cover6.jpg" alt="Roasted Eggplant">
+            <h3> ROASTED EGGPLANT</h3>
+            <p>باذنجان مشوي</p>
           </a>
         </li>
       </ul>
     </section>
-
 
     <section class="about" id="about">
       <h2>About Us</h2>
       <p>Discover our story in providing product services.</p>
       <div class="row company-info">
         <h3>Our Story</h3>
-        <p>Experience the excellence  services, where we have been offering high-quality ear for outdoor enthusiasts for over a decade. Our commitment to quality and customer satisfaction ensures that every adventurer can rely on us for their camping needs.</p>
+        <p>Experience the excellence services, where we have been offering high-quality products for over a decade. Our commitment to quality and customer satisfaction ensures that every customer can rely on us for their needs.</p>
       </div>
-        <h3>Our Team</h3>
-        <ul>
-          <li>John Doe - Founder and CEO</li> 
-        </ul>
-      </div>
+      <h3>Our Team</h3>
+      <ul>
+        <li>Founder and CEO</li> 
+      </ul>
     </section>
 
     <section class="contact" id="contact">
@@ -118,13 +108,13 @@
       <div class="row">
         <div class="col information">
           <div class="contact-details">
-            <p><i class="fas fa-map-marker-alt"></i> 123 Campsite Avenue, Wilderness, CA 98765</p>
-            <p><i class="fas fa-envelope"></i> info@campinggearexperts.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> Grotewinkellaan 80,1853 Grimbergen</p>
+            <p><i class="fas fa-envelope"></i> orsa@gmail.com</p>
             <p><i class="fas fa-phone"></i> (123) 456-7890</p>
             <p><i class="fas fa-clock"></i> Monday - Friday: 9:00 AM - 5:00 PM</p>
             <p><i class="fas fa-clock"></i> Saturday: 10:00 AM - 3:00 PM</p>
             <p><i class="fas fa-clock"></i> Sunday: Closed</p>
-            <p><i class="fas fa-globe"></i> github</p>
+            <p><i class="fas fa-globe"></i> <a href="https://orsagroup.com">ORSAGROUP</a></p>
           </div>          
         </div>
       </div>
@@ -139,6 +129,7 @@
         </span>
       </div>
     </footer>
+
     <script>
       document.addEventListener('DOMContentLoaded', function () {
         const cards = document.querySelectorAll('.card');
@@ -158,7 +149,5 @@
         });
       });
     </script>
-    
-
   </body>
-</html> 
+</html>
