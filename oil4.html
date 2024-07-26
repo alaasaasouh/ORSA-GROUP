@@ -9,14 +9,13 @@
   </head>
   <body>
     <header>
-      
       <nav class="navbar">
         <h2 class="logo"><a href="#">ORSA GROUP</a></h2>
         <input type="checkbox" id="menu-toggler">
         <label for="menu-toggler" id="hamburger-btn">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
             <path d="M0 0h24v24H0z" fill="none"/>
-            <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2H3v2zm0-7v2H3z"/>
           </svg>
         </label>
         <ul class="all-links">
@@ -25,65 +24,55 @@
           <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav>
-
     </header>
 
-    <section class="homepage" id="home">
-      <div class="content">
+    <section class="homepage" id="home" style="position: relative; height: 100vh; overflow: hidden;">
+      <img src="images/oil4.jpeg" alt="Olive Background" style="position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; object-fit: cover; transform: translate(-50%, -50%); z-index: -1;">
+      <div class="content" style="position: relative; z-index: 1; color: #fff; text-align: center;">
         <div class="text">
           <h1>Olive</h1>
           <p>
-            FR: INGRÉDIENTS
-            Eau, Olive Verte, Régulateur d'Acidité: Acide
-            Citrique A330, Benzoate de Sodium A211
-            
-            <br>NL: INGREDIENTEN
-            Water, Groene olijven, zuurteregelaar:
-            Citroenzuur A330, natriumbenzoaat A211</p>
+            FR: INGRÉDIENTS Eau, Olive Verte, Régulateur d'Acidité: Acide Citrique A330, Benzoate de Sodium A211
+            <br>NL: INGREDIENTEN Water, Groene olijven, zuurteregelaar: Citroenzuur A330, natriumbenzoaat A211
+          </p>
         </div>
-        <a href="#services">ITEMS</a>
+        <a href="#services" style="display: inline-block; margin-top: 10px; padding: 10px 20px; background-color: #000; color: #fff; text-decoration: none; border-radius: 5px;">OUR ITEMS</a>
       </div>
     </section>
 
     <section class="services" id="services">
+      <h2>Our ITEMS</h2>
+      <p>Explore our wide range of products.</p>
       <ul class="cards">
         <li class="card">
           <a href="images/oil41.jpg">
-            <img src="images/oil41.jpg" alt="oil">
+            <img src="images/oil41.jpg" alt="Olive Oil">
             <p>Olive Verte
               <br>Groene Olijf
-              
-            <br>1000g
-          </a>
+              <br>1000g
+            </p>
           </a>
         </li>
         <li class="card">
           <a href="images/oil42.jpg">
-            <img src="images/oil42.jpg" >
-            <p><Var>HOlive Verte
-              <br> Groene Olijf
-               <br>زيتون اخضر حجم صغير – حجم كبير – مشوي – محشي اريزونا-ثوم
-               <br>1000g</Var></p>
-              </a>
-              
-        
-</li>
+            <img src="images/oil42.jpg">
+            <p>Olive Verte
+              <br>Groene Olijf
+              <br>1000g
+            </p>
+          </a>
+        </li>
       </ul>
     </section>
-
 
     <section class="about" id="about">
       <h2>About Us</h2>
       <p>Discover our story in providing product services.</p>
       <div class="row company-info">
         <h3>Our Story</h3>
-        <p>Experience the excellence  services, where we have been offering high-quality ear for outdoor enthusiasts for over a decade. Our commitment to quality and customer satisfaction ensures that every adventurer can rely on us for their camping needs.</p>
+        <p>Experience excellence in service, as we have been providing high-quality products. Meanwhile , our products come from the Lebanese plains and farmers to the customer immediately</p>
       </div>
-        <h3>Our Team</h3>
-        <ul>
-          <li>John Doe - Founder and CEO</li> 
-        </ul>
-      </div>
+
     </section>
 
     <section class="contact" id="contact">
@@ -92,13 +81,15 @@
       <div class="row">
         <div class="col information">
           <div class="contact-details">
-            <p><i class="fas fa-map-marker-alt"></i> 123 Campsite Avenue, Wilderness, CA 98765</p>
-            <p><i class="fas fa-envelope"></i> info@campinggearexperts.com</p>
-            <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+            <p><i class="fas fa-map-marker-alt"></i> Grotewinkellaan 80,1853 Grimbergen</p>
+            <p><i class="fas fa-envelope"></i> orsagroup@gmail.com</p>
+            <p>For any comments reach out to us at</p>
+            <p><i class="fas fa-phone"></i>  🇱🇧 +961 70 141 087</p>
+            <p><i class="fas fa-phone"></i>  🇧🇪 (123) 456-7890</p>
             <p><i class="fas fa-clock"></i> Monday - Friday: 9:00 AM - 5:00 PM</p>
             <p><i class="fas fa-clock"></i> Saturday: 10:00 AM - 3:00 PM</p>
             <p><i class="fas fa-clock"></i> Sunday: Closed</p>
-            <p><i class="fas fa-globe"></i> github</p>
+            <p><i class="fas fa-globe"></i> <a href="https://orsagroup.store/">ORSAGROUP</a></p>
           </div>          
         </div>
       </div>
@@ -108,11 +99,12 @@
       <div>
         <span>ORSA GROUP © 2023 All Rights Reserved</span>
         <span class="link">
-            <a href="index.html">Home</a>
+            <a href="#">Home</a>
             <a href="#contact">Contact</a>
         </span>
       </div>
     </footer>
+    
     <script>
       document.addEventListener('DOMContentLoaded', function () {
         const cards = document.querySelectorAll('.card');
@@ -132,7 +124,5 @@
         });
       });
     </script>
-    
-
   </body>
-</html> 
+</html>
