@@ -6,6 +6,33 @@
     <title>ORSA GROUP</title>
     <link rel="stylesheet" href="style.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        /* Inline CSS for demonstration */
+        .homepage::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+            z-index: 1;
+        }
+        .homepage .content {
+            position: relative;
+            z-index: 2;
+            color: #fff;
+            text-align: center;
+            padding-top: 150px; /* Increase this value to move the content lower */
+        }
+        .homepage .content h1,
+        .homepage .content p {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+        }
+        .homepage .content a {
+            margin-top: 30px; /* Adjusted margin-top */
+        }
+    </style>
 </head>
 <body>
 <header>
@@ -28,12 +55,12 @@
 
 <section class="homepage" id="home" style="position: relative; height: 100vh; overflow: hidden;">
     <img src="images/intro.jpeg" alt="Background Image" style="position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; object-fit: cover; transform: translate(-50%, -50%); z-index: -1;">
-    <div class="content" style="position: relative; z-index: 2; color: #fff; text-align: center;">
+    <div class="content">
         <div class="text">
             <h1>ORSA GROUP</h1>
             <p>Discover top-quality PRODUCTS<br>Make lasting memories.</p>
         </div>
-        <a href="#services" style="display: inline-block; margin-top: 10px; padding: 10px 20px; background-color: #000; color: #fff; text-decoration: none; border-radius: 5px; z-index: 3;">OUR ITEMS</a>
+        <a href="#services" style="display: inline-block; padding: 10px 20px; background-color: #000; color: #fff; text-decoration: none; border-radius: 5px; z-index: 3;">OUR ITEMS</a>
     </div>
 </section>
 
@@ -102,7 +129,7 @@
         <div class="col information">
             <div class="contact-details">
                 <p><i class="fas fa-map-marker-alt"></i> Grotewinkellaan 80, 1853 Grimbergen</p>
-                <p><i class="fas fa-envelope"></i> ORSA.T@hotmail.com</p>
+                <p><i class="fas fa-envelope"></i> orsagroup@gmail.com</p>
                 <p><i class="fas fa-phone"></i> 🇱🇧 +961 70 141 087</p>
                 <p><i class="fas fa-phone"></i> 🇧🇪 +32 466 31 69 14</p>
                 <p><i class="fas fa-clock"></i> Monday - Friday: 9:00 AM - 5:00 PM</p>
@@ -123,6 +150,11 @@
         </span>
     </div>
 </footer>
+
+<!-- WhatsApp Button -->
+<a href="https://wa.me/+96170141087" class="whatsapp-float" target="_blank">
+    <img src="images/whatsapp.jpg" alt="WhatsApp" class="whatsapp-logo">
+</a>
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
