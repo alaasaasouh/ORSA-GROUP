@@ -1,128 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ORSA GROUP</title>
+    <title>ORSA GROUP - Olives</title>
     <link rel="stylesheet" href="style.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
+</head>
+<body>
+<header>
+    <nav class="navbar">
         <h2 class="logo"><a href="#">ORSA GROUP</a></h2>
         <input type="checkbox" id="menu-toggler">
         <label for="menu-toggler" id="hamburger-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
-            <path d="M0 0h24v24H0z" fill="none"/>
-            <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2H3v2zm0-7v2H3z"/>
-          </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2H3v2zm0-7v2H3z"/>
+            </svg>
         </label>
         <ul class="all-links">
-          <li><a href="index.html">Items</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+            <li><a href="index.html">Items</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
         </ul>
-      </nav>
-    </header>
+    </nav>
+</header>
 
-    <section class="homepage" id="home" style="position: relative; height: 100vh; overflow: hidden;">
-      <img src="images/oil4.jpeg" alt="Olive Background" style="position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; object-fit: cover; transform: translate(-50%, -50%); z-index: -1;">
-      <div class="content" style="position: relative; z-index: 1; color: #fff; text-align: center;">
+<section class="homepage" id="home">
+    <video autoplay muted loop id="home-video">
+        <source src="videos/video2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="content">
         <div class="text">
-          <h1>Olive</h1>
-          <p>
-            FR: INGRÉDIENTS Eau, Olive Verte, Régulateur d'Acidité: Acide Citrique A330, Benzoate de Sodium A211
-            <br>NL: INGREDIENTEN Water, Groene olijven, zuurteregelaar: Citroenzuur A330, natriumbenzoaat A211
-          </p>
+            <h1>Olive</h1>
+            <p>
+                FR: INGRÉDIENTS Eau, Olive Verte, Régulateur d'Acidité: Acide Citrique A330, Benzoate de Sodium A211<br>
+                NL: INGREDIENTEN Water, Groene olijven, zuurteregelaar: Citroenzuur A330, natriumbenzoaat A211
+            </p>
         </div>
         <a href="#services" style="display: inline-block; margin-top: 10px; padding: 10px 20px; background-color: #000; color: #fff; text-decoration: none; border-radius: 5px;">OUR ITEMS</a>
-      </div>
-    </section>
+    </div>
+</section>
 
-    <section class="services" id="services">
-      <h2>Our ITEMS</h2>
-      <p>Explore our wide range of products.</p>
-      <ul class="cards">
+<section class="services" id="services">
+    <ul class="cards">
         <li class="card">
-          <a href="images/oil41.jpg">
-            <img src="images/oil41.jpg" alt="Olive Oil">
-            <p>Olive Verte
-              <br>Groene Olijf
-              <br>1000g
-            </p>
-          </a>
+            <a href="images/oil41.jpg">
+                <img src="images/oil41.jpg" alt="Olive">
+                <p>Olive Verte<br>Groene Olijf<br>1000g</p>
+            </a>
         </li>
         <li class="card">
-          <a href="images/oil42.jpg">
-            <img src="images/oil42.jpg">
-            <p>Olive Verte
-              <br>Groene Olijf
-              <br>1000g
-            </p>
-          </a>
+            <a href="images/oil42.jpg">
+                <img src="images/oil42.jpg" alt="Olive">
+                <p>Olive Verte<br>Groene Olijf<br>1000g</p>
+            </a>
         </li>
-      </ul>
-    </section>
+    </ul>
+</section>
 
-    <section class="about" id="about">
-      <h2>About Us</h2>
-      <p>Discover our story in providing product services.</p>
-      <div class="row company-info">
+<section class="about" id="about">
+    <h2>About Us</h2>
+    <p>Discover our story in providing product services.</p>
+    <div class="row company-info">
         <h3>Our Story</h3>
-        <p>Experience excellence in service, as we have been providing high-quality products. Meanwhile , our products come from the Lebanese plains and farmers to the customer immediately</p>
-      </div>
+        <p>Experience excellence in service, as we have been providing high-quality products. Our products come from the Lebanese plains and farmers to the customer directly.</p>
+    </div>
+</section>
 
-    </section>
-
-    <section class="contact" id="contact">
-      <h2>Contact Us</h2>
-      <p>Reach out to us for any inquiries or feedback.</p>
-      <div class="row">
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Reach out to us for any inquiries or feedback.</p>
+    <div class="row">
         <div class="col information">
-          <div class="contact-details">
-            <p><i class="fas fa-map-marker-alt"></i> Grotewinkellaan 80,1853 Grimbergen</p>
-            <p><i class="fas fa-envelope"></i> orsagroup@gmail.com</p>
-            <p>For any comments reach out to us at</p>
-            <p><i class="fas fa-phone"></i>  🇱🇧 +961 70 141 087</p>
-            <p><i class="fas fa-phone"></i>  🇧🇪 (123) 456-7890</p>
-            <p><i class="fas fa-clock"></i> Monday - Friday: 9:00 AM - 5:00 PM</p>
-            <p><i class="fas fa-clock"></i> Saturday: 10:00 AM - 3:00 PM</p>
-            <p><i class="fas fa-clock"></i> Sunday: Closed</p>
-            <p><i class="fas fa-globe"></i> <a href="https://orsagroup.store/">ORSAGROUP</a></p>
-          </div>          
+            <div class="contact-details">
+                <p><i class="fas fa-map-marker-alt"></i> Grotewinkellaan 80, 1853 Grimbergen</p>
+                <p><i class="fas fa-envelope"></i> orsagroup@gmail.com</p>
+                <p><i class="fas fa-phone"></i> 🇱🇧 +961 70 141 087</p>
+                <p><i class="fas fa-phone"></i> 🇧🇪 +32 466 31 69 14</p>
+                <p><i class="fas fa-clock"></i> Monday - Friday: 9:00 AM - 5:00 PM</p>
+                <p><i class="fas fa-clock"></i> Saturday: 10:00 AM - 3:00 PM</p>
+                <p><i class="fas fa-clock"></i> Sunday: Closed</p>
+                <p><i class="fas fa-globe"></i> <a href="https://orsagroup.store/">ORSAGROUP</a></p>
+            </div>
         </div>
-      </div>
-    </section>
+    </div>
+</section>
 
-    <footer>
-      <div>
+<footer>
+    <div>
         <span>ORSA GROUP © 2023 All Rights Reserved</span>
         <span class="link">
             <a href="#">Home</a>
             <a href="#contact">Contact</a>
         </span>
-      </div>
-    </footer>
-    
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
+    </div>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
         const cards = document.querySelectorAll('.card');
-    
         const observer = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('show');
-            }
-          });
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
         }, {
-          threshold: 0.1
+            threshold: 0.1
         });
-    
+
         cards.forEach(card => {
-          observer.observe(card);
+            observer.observe(card);
         });
-      });
-    </script>
-  </body>
+    });
+</script>
+</body>
 </html>
