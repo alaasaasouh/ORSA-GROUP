@@ -1,194 +1,207 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ORSA GROUP</title>
-    <link rel="stylesheet" href="style.css"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <style>
-        /* Inline CSS for demonstration */
-        .homepage {
-            position: relative;
-            height: 100vh;
-            overflow: hidden;
-        }
-        .homepage::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
-            z-index: 1;
-        }
-        .homepage img {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 100%;
-            height: 100%;
-            object-fit: contain; /* Display the entire image */
-            transform: translate(-50%, -50%);
-            z-index: -1;
-        }
-        .homepage .content {
-            position: relative;
-            z-index: 2;
-            color: #fff;
-            text-align: center;
-            padding-top: 520px; /* Increased padding-top to move content lower */
-        }
-        .homepage .content .text {
-            margin-top: 20px; /* Space between button and text */
-        }
-        .homepage .content h1,
-        .homepage .content p {
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
-        }
-    </style>
-</head>
-<body>
-<header>
-    <nav class="navbar">
-        <h2 class="logo"><a href="#">ORSA GROUP</a></h2>
-        <input type="checkbox" id="menu-toggler">
-        <label for="menu-toggler" id="hamburger-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
-                <path d="M0 0h24v24H0z" fill="none"/>
-                <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2H3v2zm0-7v2H3z"/>
-            </svg>
-        </label>
-        <ul class="all-links">
-            <li><a href="index.html">Items</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-        </ul>
-    </nav>
-</header>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ORSA GROUP</title>
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <style>
+            /* Inline CSS for demonstration */
+            .homepage {
+                position: relative;
+                height: 100vh;
+                overflow: hidden;
+            }
+            .homepage::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+                z-index: 1;
+            }
+            .homepage img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 100%;
+                height: 100%;
+                object-fit: contain; /* Display the entire image */
+                transform: translate(-50%, -50%);
+                z-index: -1;
+            }
+            .homepage .content {
+                position: relative;
+                z-index: 2;
+                color: #fff;
+                text-align: center;
+                padding-top: 520px; /* Increased padding-top to move content lower */
+            }
+            .homepage .content .text {
+                margin-top: 20px; /* Space between button and text */
+            }
+            .homepage .content h1,
+            .homepage .content p {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+            }
+        </style>
+    </head>
+    <body>
+    <header>
+        <nav class="navbar">
+            <h2 class="logo"><a href="#">ORSA GROUP</a></h2>
+            <input type="checkbox" id="menu-toggler">
+            <label for="menu-toggler" id="hamburger-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+                    <path d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2H3v2zm0-7v2H3z"/>
+                </svg>
+            </label>
+            <ul class="all-links">
+                <li><a href="index.html">Items</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section class="homepage" id="home">
-    <img src="images/intro.jpeg" alt="Background Image">
-    <div class="content">
-        <a href="#services" style="display: inline-block; padding: 10px 20px; background-color: #000; color: #fff; text-decoration: none; border-radius: 5px;">OUR ITEMS</a>
-        <div class="text">
-            <h1>ORSA GROUP</h1>
-            <p>Discover top-quality PRODUCTS<br>Make lasting memories.</p>
-        </div>
-    </div>
-</section>
-
-<section class="services" id="services">
-    <h2>Our ITEMS</h2>
-    <p>Explore our wide range of products.</p>
-    <ul class="cards">
-        <li class="card">
-            <a href="oil.html">
-                <img src="images/tents.jpg" alt="Olive Oil">
-                <h3>Extra virgin olive oil</h3>
-                <p>زيت ريتون بكر ممتاز</p>
-            </a>
-        </li>
-        <li class="card">
-            <a href="oil2.html">
-                <img src="images/cover2.jpg" alt="Pure Oil">
-                <h3>Pure olive OIL</h3>
-                <p>زيت زيتون نقي</p>
-            </a>
-        </li>
-        <li class="card">
-            <a href="oil3.html">
-                <img src="images/cover3.jpg" alt="Sesame Tahini">
-                <h3>Sesame tahini</h3>
-                <p>طحينة السمسم</p>
-            </a>
-        </li>
-        <li class="card">
-            <a href="oil4.html">
-                <img src="images/cover4.jpg" alt="Olives">
-                <h3>Olive</h3>
-                <p>زيتون</p>
-            </a>
-        </li>
-        <li class="card">
-            <a href="oil5.html">
-                <img src="images/cover5.jpg" alt="Pickled Cucumber">
-                <h3>Pickled cucumber</h3>
-                <p>مخلل خيار</p>
-            </a>
-        </li>
-        <li class="card">
-            <a href="oil6.html">
-                <img src="images/cover6.jpg" alt="Roasted Eggplant">
-                <h3>ROASTED EGGPLANT</h3>
-                <p>باذنجان مشوي</p>
-            </a>
-        </li>
-    </ul>
-</section>
-
-<section class="about" id="about">
-    <h2>About Us</h2>
-    <p>Discover our story in providing product services.</p>
-    <div class="row company-info">
-        <h3>Our Story</h3>
-        <p>Experience excellence in service, as we have been providing high-quality products. Our products come from the Lebanese plains and farmers to the customer directly.</p>
-    </div>
-</section>
-
-<section class="contact" id="contact">
-    <h2>Contact Us</h2>
-    <p>Reach out to us for any inquiries or feedback.</p>
-    <div class="row">
-        <div class="col information">
-            <div class="contact-details">
-                <p><i class="fas fa-map-marker-alt"></i> Grotewinkellaan 80, 1853 Grimbergen,Belgium </p>
-                <p><i class="fas fa-envelope"></i> ORSA.T@hotmail.com</p>
-                <p><i class="fas fa-phone"></i> 🇱🇧 +961 70 141 087</p>
-                <p><i class="fas fa-phone"></i> 🇧🇪 +32 466 31 69 14</p>
-                <p><i class="fas fa-clock"></i> Monday - Friday: 9:00 AM - 5:00 PM</p>
-                <p><i class="fas fa-clock"></i> Saturday: 10:00 AM - 3:00 PM</p>
-                <p><i class="fas fa-clock"></i> Sunday: Closed</p>
-                <p><i class="fas fa-globe"></i> <a href="https://orsagroup.store/">ORSAGROUP</a></p>
+    <section class="homepage" id="home">
+        <img src="images/intro.jpeg" alt="Background Image">
+        <div class="content">
+            <a href="#services" style="display: inline-block; padding: 10px 20px; background-color: #000; color: #fff; text-decoration: none; border-radius: 5px;">OUR ITEMS</a>
+            <div class="text">
+                <h1>ORSA GROUP</h1>
+                <p>Discover top-quality PRODUCTS<br>Make lasting memories.</p>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
+    <section class="services" id="services">
+        <h2>Our ITEMS</h2>
+        <p>Explore our wide range of products.</p>
+        <ul class="cards">
+            <li class="card">
+                <a href="oil.html">
+                    <img src="images/tents.jpg" alt="Olive Oil">
+                    <h3>Extra virgin olive oil</h3>
+                    <p>زيت ريتون بكر ممتاز</p>
+                </a>
+            </li>
+            <li class="card">
+                <a href="oil2.html">
+                    <img src="images/cover2.jpg" alt="Pure Oil">
+                    <h3>Pure olive OIL</h3>
+                    <p>زيت زيتون نقي</p>
+                </a>
+            </li>
+            <li class="card">
+                <a href="oil3.html">
+                    <img src="images/cover3.jpg" alt="Sesame Tahini">
+                    <h3>Sesame tahini</h3>
+                    <p>طحينة السمسم</p>
+                </a>
+            </li>
+            <li class="card">
+                <a href="oil4.html">
+                    <img src="images/cover4.jpg" alt="Olives">
+                    <h3>Olive</h3>
+                    <p>زيتون</p>
+                </a>
+            </li>
+            <li class="card">
+                <a href="oil5.html">
+                    <img src="images/cover5.jpg" alt="Pickled Cucumber">
+                    <h3>Pickled cucumber</h3>
+                    <p>مخلل خيار</p>
+                </a>
+            </li>
+            <li class="card">
+                <a href="oil6.html">
+                    <img src="images/cover6.jpg" alt="Roasted Eggplant">
+                    <h3>ROASTED EGGPLANT</h3>
+                    <p>باذنجان مشوي</p>
+                </a>
+            </li>
+            <li class="card">
+                <a href="oil7.html">
+                    <img src="images/pic70cover.jpeg" alt="Roasted Eggplant">
+                    <h3>COOKIES</h3>
+                    <p>L'AROME PRODUCTS</p>
+                </a>
+            </li>
+            <li class="card">
+                <a href="oil8.html">
+                    <img src="images/pic80cover.jpeg" alt="Roasted Eggplant">
+                    <h3>OUR BARS</h3>
+                    <p> Hummus Bars | Protein Bars | Energy Bars</p>
+                </a>
+            </li>
+        </ul>
+    </section>
 
-<footer>
-    <div>
-        <span>ORSA GROUP © 2023 All Rights Reserved</span>
-        <span class="link">
-            <a href="#">Home</a>
-            <a href="#contact">Contact</a>
-        </span>
-    </div>
-</footer>
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>Discover our story in providing product services.</p>
+        <div class="row company-info">
+            <h3>Our Story</h3>
+            <p>Experience excellence in service, as we have been providing high-quality products. Our products come from the Lebanese plains and farmers to the customer directly.</p>
+        </div>
+    </section>
 
-<!-- WhatsApp Button -->
-<a href="https://wa.me/+96170141087" class="whatsapp-float" target="_blank">
-    <img src="images/whatsapp.jpg" alt="WhatsApp" class="whatsapp-logo">
-</a>
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Reach out to us for any inquiries or feedback.</p>
+        <div class="row">
+            <div class="col information">
+                <div class="contact-details">
+                    <p><i class="fas fa-map-marker-alt"></i> Grotewinkellaan 80, 1853 Grimbergen</p>
+                    <p><i class="fas fa-envelope"></i> orsagroup@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> 🇱🇧 +961 70 141 087</p>
+                    <p><i class="fas fa-phone"></i> 🇧 (123) 456-7890</p>
+                    <p><i class="fas fa-clock"></i> Monday - Friday: 9:00 AM - 5:00 PM</p>
+                    <p><i class="fas fa-clock"></i> Saturday: 10:00 AM - 3:00 PM</p>
+                    <p><i class="fas fa-clock"></i> Sunday: Closed</p>
+                    <p><i class="fas fa-globe"></i> <a href="https://orsagroup.store/">ORSAGROUP</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const cards = document.querySelectorAll('.card');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('show');
-                }
+    <footer>
+        <div>
+            <span>ORSA GROUP © 2023 All Rights Reserved</span>
+            <span class="link">
+                <a href="#">Home</a>
+                <a href="#contact">Contact</a>
+            </span>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/+96170141087" class="whatsapp-float" target="_blank">
+        <img src="images/whatsapp.jpg" alt="WhatsApp" class="whatsapp-logo">
+    </a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const cards = document.querySelectorAll('.card');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    }
+                });
+            }, {
+                threshold: 0.1
             });
-        }, {
-            threshold: 0.1
-        });
 
-        cards.forEach(card => {
-            observer.observe(card);
+            cards.forEach(card => {
+                observer.observe(card);
+            });
         });
-    });
-</script>
-</body>
-</html>
+    </script>
+    </body>
+    </html>
